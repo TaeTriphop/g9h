@@ -1,0 +1,13 @@
+.contact {
+  flex-direction: column;
+}
+
+.about__contact {
+  color: var(--clr-primary);
+}
+
+.about__contact_image{
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+}
