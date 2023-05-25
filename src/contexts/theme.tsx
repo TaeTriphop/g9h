@@ -27,6 +27,8 @@ const ThemeColorProvider = ({ children }: ThemeProviderProps) => {
       // not null
       const stringDecode = decodeString(storedThemeName);
       setThemeName(stringDecode)
+    }else {
+      setThemeName('light');
     }
 
   }, [])
