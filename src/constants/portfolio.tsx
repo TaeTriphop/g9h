@@ -107,9 +107,14 @@ interface Profile {
 
 async function fetchProfileData(): Promise<Profile[]> {
   try {
-    const response = await axios.get('http://localhost:9000/Profile');
+    // const response = await axios.get('http://localhost:9000/Profile');
+    // const profile: Profile[] = response.data.data;
+    // return profile;
+
+    const response = await axios.get('https://catfact.ninja/fact');
     const profile: Profile[] = response.data.data;
     return profile;
+    
   } catch (error) {
     // จัดการข้อผิดพลาดที่เกิดขึ้นในการเรียก API
     console.error(error);

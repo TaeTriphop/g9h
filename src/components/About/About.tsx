@@ -6,15 +6,15 @@ export default function About() {
     const { name, role, description, resume, social } = about
 
     // เรียกใช้ฟังก์ชัน fetchProfileData
-    fetchProfileData()
-        .then((profile) => {
-            // ทำสิ่งที่คุณต้องการกับข้อมูล profile ที่ได้รับ เช่น แสดงผลในแอปพลิเคชันหรือประมวลผลต่อไป
-            console.log('ข้อมูล Profile:', profile[0]);
-            const { first_name } = profile[0];
-        })
-        .catch((error) => {
-            console.error('เกิดข้อผิดพลาดในการดึงข้อมูล Profile:', error);
-        });
+    // fetchProfileData()
+    //     .then((profile) => {
+    //         // ทำสิ่งที่คุณต้องการกับข้อมูล profile ที่ได้รับ เช่น แสดงผลในแอปพลิเคชันหรือประมวลผลต่อไป
+    //         console.log('ข้อมูล Profile:', profile[0]);
+    //         const { first_name } = profile[0];
+    //     })
+    //     .catch((error) => {
+    //         console.error('เกิดข้อผิดพลาดในการดึงข้อมูล Profile:', error);
+    //     });
     return (
         <div className='about center'>
             {name && (
