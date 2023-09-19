@@ -69,7 +69,6 @@ const projects: interfaceProjects[] = [
   // },
 ]
 
-
 const skills: string[] = [
   'HTML',
   'CSS',
