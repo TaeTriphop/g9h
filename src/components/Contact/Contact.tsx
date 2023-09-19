@@ -41,8 +41,8 @@ export default function Contact() {
           </TabList>
         </Box>
         <TabPanel value="1"><span className="about__contact"> triphop.pro@gmail.com </span></TabPanel>
-        <TabPanel value="2"><span className="about__contact">ปัจจุบันพักอาศัยอยู่ใกล้ MRT บางพลัด </span></TabPanel>
-        <TabPanel value="3"><img className='about__contact_image' src={process.env.PUBLIC_URL + '/line_g9h.jpg'} alt="My Image" /></TabPanel>
+        <TabPanel value="2"><span className="about__contact">ปัจจุบันพักอาศัยอยู่ใกล้ MRT หลักสอง </span></TabPanel>
+        <TabPanel value="3"><img className='about__contact_image' src={process.env.PUBLIC_URL + '/line_g9h.jpg'} alt="QRLine" /></TabPanel>
       </TabContext>
     </section>
   );

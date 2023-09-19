@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react'
-import {encode, decode} from 'string-encode-decode'
+import { encode, decode } from 'string-encode-decode'
 
 interface Theme {
   themeName: string;
@@ -16,21 +16,14 @@ const ThemeColorProvider = ({ children }: ThemeProviderProps) => {
   const [themeName, setThemeName] = useState<string>('light')
 
   useEffect(() => {
-    // const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    // setThemeName(darkMediaQuery.matches ? 'dark' : 'light')
-    // darkMediaQuery.addEventListener('change', (e) => {
-    //   setThemeName(e.matches ? 'dark' : 'light')
-    // });
-
     const storedThemeName = localStorage.getItem('themeName');
     if (storedThemeName) {
       // not null
       const stringDecode = decodeString(storedThemeName);
       setThemeName(stringDecode)
-    }else {
+    } else {
       setThemeName('light');
     }
-
   }, [])
 
   const toggleTheme = () => {
@@ -49,15 +42,15 @@ const ThemeColorProvider = ({ children }: ThemeProviderProps) => {
   )
 }
 
-
 function encodeString(data: string) {
-  const encodedDataBtoa = encode(data); // encode a string
+  const encodedDataBtoa = encode(data);
   return encodedDataBtoa;
 }
 
 function decodeString(data: string) {
-  const decodedDataBtoa = JSON.parse(decode(data)); // encode a string
-  return decodedDataBtoa.valueTheme;
+  const decodedDataBtoa = decode(data);
+  const decodedObject = JSON.parse(decodedDataBtoa);
+  return decodedObject.valueTheme;
 }
 
 export { ThemeColorProvider, ThemeContext }

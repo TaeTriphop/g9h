@@ -24,11 +24,11 @@ interface About {
 
 const about: About = {
   // all the properties are optional - can be left empty or deleted
-  name: 'Tea',
+  name: 'Tae',
   role: 'Front End Developer',
   description:
     'ชายผู้ใฝ่ฝันที่จะเป็น Full Stack Developer และราชาโจรสลัด.',
-    resume: 'https://example.com',
+    resume: 'https://drive.google.com/drive/folders/1Wv3ga3Jok8-UvYM3OSa-34UXOP8_ohwV?usp=sharing',
     social: {
       github: 'https://github.com/TaeTriphop',
   },
@@ -47,38 +47,38 @@ export interface interfaceProjects {
 const projects: interfaceProjects[] = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
+  {
+    projectId: 1,
+    name: 'Random Quote',
+    description:
+      'สุ่มคำพูดของเต้ คำที่ดูเป็นเต้ คำที่เต้พูด',
+    stack: ['Tailwind CSS', 'TypeScript', 'React'],
+    view: '',
+    sourceCode: 'https://github.com/TaeTriphop/Quote-g9h',
+    livePreview: 'https://taetriphop.github.io/Quote-g9h/',
+  },
   // {
-  //   projectId: 1,
-  //   name: 'Tic Tac Toe ',
+  //   projectId: 2,
+  //   name: 'To Do List',
   //   description:
   //     'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-  //   stack: ['SASS1', 'TypeScript1', 'React1'],
-  //   view: 'ticTacToe',
-  //   sourceCode: '',
-  //   livePreview: '',
+  //   stack: ['SASS2', 'TypeScript2', 'React2'],
+  //   view: 'toDo',
+  //   sourceCode: '', // Name
+  //   livePreview: '', //link to 
   // },
-  {
-    projectId: 2,
-    name: 'To Do List',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS2', 'TypeScript2', 'React2'],
-    view: 'toDo',
-    sourceCode: '', // Name
-    livePreview: '', //link to 
-  },
 ]
 
 
 const skills: string[] = [
   'HTML',
   'CSS',
-  'PHP',
-  'JavaScript',
   '.NET Core',
   'React',
-  'Node.js (ExpressJs)',
+  'JavaScript',
   'TypeScript',
+  'Node.js (ExpressJs)',
+  'PHP',
   'Git',
 ];
 

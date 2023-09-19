@@ -15,7 +15,6 @@ const root = ReactDOM.createRoot(
 const theme = createTheme({
   typography: {
     fontFamily: 'Kanit, sans-serif', // กำหนดฟอนต์เป็น Kanit และฟอนต์สำรอง sans-serif
-    // กำหนดค่าฟอนต์อื่น ๆ ตามต้องการ
   },
 });
 

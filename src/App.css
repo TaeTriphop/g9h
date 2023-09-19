@@ -88,6 +88,10 @@ main {
   background-color: var(--clr-primary) !important;
 }
 
+.css-ttwr4n{
+  /* background-color: var(--clr-primary) !important; */
+}
+
 .btn {
   display: block;
   cursor: pointer;
