@@ -57,16 +57,16 @@ const projects: interfaceProjects[] = [
     sourceCode: 'https://github.com/TaeTriphop/Quote-g9h',
     livePreview: 'https://taetriphop.github.io/Quote-g9h/',
   },
-  // {
-  //   projectId: 2,
-  //   name: 'To Do List',
-  //   description:
-  //     'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-  //   stack: ['SASS2', 'TypeScript2', 'React2'],
-  //   view: 'toDo',
-  //   sourceCode: '', // Name
-  //   livePreview: '', //link to 
-  // },
+  {
+    projectId: 2,
+    name: 'Manchester City : My Favorite Football Team',
+    description:
+      'Manchester City สุดยอดทีมที่ดีที่สุดใน Premier League',
+    stack: ['Tailwind CSS','daisyUI', 'TypeScript', 'React' ,'apifootball (Free 180 API calls per hour & endpoint)'],
+    view: '',
+    sourceCode: 'https://github.com/TaeTriphop/mancity', // Name
+    livePreview: 'https://taetriphop.github.io/mancity/', //link to 
+  },
 ]
 
 const skills: string[] = [

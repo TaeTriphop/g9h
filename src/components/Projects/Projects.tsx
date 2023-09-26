@@ -12,6 +12,7 @@ export default function ProjectsPage() {
           <ProjectContainer key={project.projectId} project={project} />
         ))}
       </div>
+      
     </section>
   );
 }
