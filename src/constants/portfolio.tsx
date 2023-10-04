@@ -1,12 +1,10 @@
-import axios from 'axios';
-
 interface Header {
   homepage?: string;
   title?: string;
 }
 
 const header: Header = {
-  homepage: 'https://www.facebook.com/TaeTriphop',
+  homepage: 'https://github.com/TaeTriphop',
   title: 'T.',
 };
 
@@ -89,8 +87,8 @@ interface Contact {
 
 const contact: Contact = {
   // all the properties are optional - can be left empty or deleted
-  email: 'Triphop.pro@gmail.com',
-  Address: 'MRT บางพลัด',
+  email: 'triphop.pro@gmail.com',
+  Address: 'MRT หลักสอง',
   Phone:'095-621-1524.',
 }
 
@@ -104,22 +102,4 @@ interface Profile {
   resume_link: string;
 }
 
-async function fetchProfileData(): Promise<Profile[]> {
-  try {
-    // const response = await axios.get('http://localhost:9000/Profile');
-    // const profile: Profile[] = response.data.data;
-    // return profile;
-
-    const response = await axios.get('https://catfact.ninja/fact');
-    const profile: Profile[] = response.data.data;
-    return profile;
-    
-  } catch (error) {
-    // จัดการข้อผิดพลาดที่เกิดขึ้นในการเรียก API
-    console.error(error);
-    return [];
-  }
-}
-
-
-export {header, about, projects, skills, contact, fetchProfileData};
+export {header, about, projects, skills, contact};

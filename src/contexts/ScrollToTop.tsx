@@ -12,7 +12,6 @@ export default function ScrollToTop(){
     window.addEventListener('scroll', toggleVisibility)
     return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
-  console.log(isVisible);
   return isVisible ? (
     <div className='scroll-top'>
       <a href='#top'>
