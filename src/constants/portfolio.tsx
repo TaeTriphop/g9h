@@ -23,7 +23,7 @@ interface About {
 const about: About = {
   // all the properties are optional - can be left empty or deleted
   name: "Tae",
-  role: "Front End Developer",
+  role: "Developer",
   description: "ชายผู้ใฝ่ฝันที่จะเป็น Full Stack Developer และราชาโจรสลัด.",
   resume:
     "https://drive.google.com/drive/folders/1Wv3ga3Jok8-UvYM3OSa-34UXOP8_ohwV?usp=sharing",
@@ -98,13 +98,19 @@ const projects: interfaceProjects[] = [
 const skills: string[] = [
   "HTML",
   "CSS",
-  ".NET Core",
-  "React",
-  "JavaScript",
-  "TypeScript",
-  "Node.js (ExpressJs)",
   "PHP",
+  ".NET",
+  "JavaScript",
+  "TypeScript (Basic)",
+  "React",
+  "Node.js (ExpressJs)",
+  "C#",
+  "SQL Server",
   "Git",
+  "Azure (Basic)",
+  "Docker / Jenkins (Basic)",
+  "Postman",
+  "Confluence",
 ];
 
 interface Contact {
@@ -114,9 +120,8 @@ interface Contact {
 }
 
 const contact: Contact = {
-  // all the properties are optional - can be left empty or deleted
   email: "triphop.pro@gmail.com",
-  Address: "MRT หลักสอง",
+  Address: "MRT พหลโยธิน (ลาดพร้าว)",
   Phone: "095-621-1524.",
 };
 
