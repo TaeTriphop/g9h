@@ -99,7 +99,7 @@ const skills: string[] = [
   "HTML",
   "CSS",
   "PHP",
-  ".NET",
+  ".NET Entity Framework (EF)",
   "JavaScript",
   "TypeScript (Basic)",
   "React",
