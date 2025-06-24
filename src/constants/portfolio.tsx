@@ -47,6 +47,20 @@ const projects: interfaceProjects[] = [
   // if there are no projects, Projects section won't show up
   {
     projectId: 1,
+    name: "Reminder App",
+    description: (
+      <>
+       ไม่มีลืมแน่นอน จะวันครบรอบหรือวันสำคัญไหนๆ อิอิ <br />
+        (ถ้ายังลืมอีกก็เคลียร์ยาวแน่นอน)
+      </>
+    ),
+    stack: ["Chakra UI", "TypeScript", "React", "API: GO", "DB: MongoDB"],
+    view: "",
+    sourceCode: "https://github.com/TaeTriphop/reminder-app",
+    livePreview: "https://taetriphop.github.io/reminder-app/",
+  },
+  {
+    projectId: 2,
     name: "To Do App",
     description: (
       <>
@@ -60,7 +74,7 @@ const projects: interfaceProjects[] = [
     livePreview: "https://taetriphop.github.io/TODOAPP/",
   },
   {
-    projectId: 2,
+    projectId: 3,
     name: "Random Quote",
     description: (
       <>
@@ -74,7 +88,7 @@ const projects: interfaceProjects[] = [
     livePreview: "https://taetriphop.github.io/Quote-g9h/",
   },
   {
-    projectId: 3,
+    projectId: 4,
     name: "Manchester City : My Favorite Football Team",
     description: (
       <>
@@ -100,6 +114,7 @@ const skills: string[] = [
   "CSS",
   "PHP",
   ".NET Entity Framework (EF)",
+  "ASP.NET MVC",
   "JavaScript",
   "TypeScript (Basic)",
   "React",
@@ -108,6 +123,7 @@ const skills: string[] = [
   "SQL Server",
   "Git",
   "Azure (Basic)",
+  "Go (Basic)",
   "Docker / Jenkins (Basic)",
   "Postman",
   "Confluence",
